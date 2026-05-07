@@ -11,6 +11,7 @@
   --normal-font-size: clamp(12px, 0.9vw + 0.4rem, 16px);
   --medium-font-size: clamp(16px, 1vw + 0.6rem, 20px);
   --large-font-size: clamp(20px, 1.1vw + 1rem, 28px);
+  --hero-font-size: clamp(36px, 4vw + 1rem, 64px);
 
   --icon-size: clamp(20px, 1vw + 0.5rem, 24px);
   --logo-size: clamp(28px, 1.5vw + 1rem, 64px);
@@ -22,9 +23,14 @@
   --red-color: #D25353;
   --maroon-color: #9E3B3B;
   --white-color: #FFEAD3;
+  --blue-color: #576A8F;
+  --purple-color: #555879;
+
+  --light-pink-color: #FBEFEF;
+  --light-blue-color: #C7D9DD;
 
   --light-color: #ededed;
-  --dark-color: #171717;
+  --dark-color: #141215;
 }
 
 /* Dark mode override */
@@ -40,6 +46,10 @@
 .hovered:hover {
   transition: 0.3s ease-in-out;
   color: #EA7B7B;
+}
+
+.elms{
+  font-family: "Elms Sans", sans-serif ;
 }
 
 @keyframes fade-in {
@@ -98,6 +108,19 @@
 .slide-up {
   transform-origin: top;
   animation: slide-up 0.25s ease-out forwards;
+}
+
+.writing-vertical {
+  writing-mode: vertical-rl;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body {

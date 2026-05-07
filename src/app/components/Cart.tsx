@@ -10,7 +10,7 @@ type CartProps = {
 function Cart({isDark, isCartOpen}: CartProps) {
 
     return (
-         <div className={`max-w-[1080px] w-full flex flex-row items-center justify-end absolute top-0
+         <div className={`w-full flex flex-row items-center justify-end absolute top-0
             ${isCartOpen ? "slide-down" : "slide-up"}`}>
             {isCartOpen && 
                 <div className={`${isDark? "text-[var(--light-color)] bg-[var(--dark-color)]" : "bg-[var(--light-color)] text-[var(--dark-color)]"}

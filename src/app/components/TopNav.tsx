@@ -17,7 +17,7 @@ function TopNav({isDark, isNavOpen}: TopNavProps) {
             ${isNavOpen ? "slide-down" : "slide-up"}`}>
             {isNavOpen && 
                 <div className={`
-                    h-full max-w-[1080px] w-full flex flex-col items-center justify-center gap-[calc(0.4vw+0.6rem)]`}>
+                    h-full w-full flex flex-col items-center justify-center gap-[calc(0.4vw+0.6rem)] p-[calc(0.4vw+0.6rem)]`}>
                     
                     <div className="h-full w-full flex flex-row items-center justify-start">
                         <span
