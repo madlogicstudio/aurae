@@ -9,12 +9,12 @@
   --foreground: #171717;
 
   --normal-font-size: clamp(12px, 0.9vw + 0.4rem, 16px);
-  --medium-font-size: clamp(16px, 1vw + 0.6rem, 20px);
-  --large-font-size: clamp(20px, 1.1vw + 1rem, 28px);
+  --medium-font-size: clamp(18px, 1.2vw + 0.8rem, 30px);
+  --large-font-size: clamp(24px, 3.2vw + 3.6rem, 48px);
   --hero-font-size: clamp(36px, 4vw + 1rem, 64px);
 
   --icon-size: clamp(20px, 1vw + 0.5rem, 24px);
-  --logo-size: clamp(28px, 1.5vw + 1rem, 64px);
+  --logo-size: clamp(32px, 2.4vw + 2rem, 64px);
 
   --space: calc(0.6vw + 0.4rem);
 
@@ -62,7 +62,7 @@
 }
 
 .fadeIn {
-  animation: fade-in 0.3s ease-in-out;
+  animation: fade-in 0.6s ease-in-out;
 }
 
 @keyframes spin {
