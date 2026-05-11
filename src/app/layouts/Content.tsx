@@ -19,8 +19,13 @@ function Content({isDark}: ContentProps) {
         
         <div className={`${isMobile? "h-auto" : "h-auto"}
             ${isDark? "text-[var(--light-color)] bg-[var(--dark-color)]" : "bg-[var(--light-color)] text-[var(--dark-color)]"}
-            w-full flex flex-col items-start justify-start scroll-smooth`}>
+            w-full flex flex-col items-center justify-start scroll-smooth`}>
             
+            <div className="h-auto w-full">
+                <video autoPlay muted loop playsInline className="w-full h-full object-cover">
+                    <source src="/Hero.mp4" type="video/mp4" className="h-full w-full" />
+                </video>
+            </div>
             <div className="flex">
                 <Hero isDark={isDark}/>
             </div>

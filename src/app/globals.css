@@ -8,7 +8,8 @@
   --background: #ededed;
   --foreground: #171717;
 
-  --normal-font-size: clamp(12px, 0.9vw + 0.4rem, 16px);
+  --small-font-size: clamp(0.4rem, 0.6vw + 0.4rem, 0.9rem);
+  --normal-font-size: clamp(0.8rem, 0.6vw + 0.4rem, 1rem);
   --medium-font-size: clamp(18px, 1.2vw + 0.8rem, 30px);
   --large-font-size: clamp(24px, 3.2vw + 3.6rem, 48px);
   --hero-font-size: clamp(36px, 4vw + 1rem, 64px);

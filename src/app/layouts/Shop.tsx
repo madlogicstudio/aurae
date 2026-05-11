@@ -1,4 +1,5 @@
 import { useIsMobile } from "../hooks/useIsMobile"
+import { ProductCard } from "../components/ProductCard"
 import Dark from '../assets/Dark.png'
 import Red from '../assets/Red.png'
 import Orange from '../assets/Orange.png'
@@ -40,75 +41,19 @@ function Shop({isDark}: ShopProps) {
 
             </div>
 
-            <div className="flex flex-row items-center justify-center flex-wrap py-[calc(0.4vw+0.6rem)]">
+            <div className="flex flex-col items-center justify-center flex-wrap py-[calc(0.4vw+0.6rem)] gap-[calc(0.4vw+0.6rem)]">
 
                 <div className="flex flex-row items-center justify-center flex-wrap gap-[calc(0.4vw+0.6rem)]">
-                    <div className="flex flex-col items-start justify-start gap-[calc(0.4vw+0.6rem)]">
-                        <img src={Dark.src} className="h-[calc(13vw+7rem)] w-[calc(13vw+7rem)] cursor-pointer" alt="" />
-                        <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn">Dark Eau De Parfum</span>
-                        <div className="w-full flex flex-row items-center justify-between gap-[calc(0.4vw+0.6rem)]">
-                            <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn text-gray-500">$20</span>
-                            <i className="bx bx-cart-plus text-[length:var(--icon-size)] hovered cursor-pointer fadeIn" />
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-start justify-start gap-[calc(0.4vw+0.6rem)]">
-                        <img src={Red.src} className="h-[calc(13vw+7rem)] w-[calc(13vw+7rem)] cursor-pointer" alt="" />
-                        <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn">Blood Eau De Parfum</span>
-                        <div className="w-full flex flex-row items-center justify-between gap-[calc(0.4vw+0.6rem)]">
-                            <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn text-gray-500">$20</span>
-                            <i className="bx bx-cart-plus text-[length:var(--icon-size)] hovered cursor-pointer fadeIn" />
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-start justify-start gap-[calc(0.4vw+0.6rem)]">
-                        <img src={Orange.src} className="h-[calc(13vw+7rem)] w-[calc(13vw+7rem)] cursor-pointer" alt="" />
-                        <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn">Sol Eau De Parfum</span>
-                        <div className="w-full flex flex-row items-center justify-between gap-[calc(0.4vw+0.6rem)]">
-                            <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn text-gray-500">$20</span>
-                            <i className="bx bx-cart-plus text-[length:var(--icon-size)] hovered cursor-pointer fadeIn" />
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-start justify-start gap-[calc(0.4vw+0.6rem)]">
-                        <img src={Purple.src} className="h-[calc(13vw+7rem)] w-[calc(13vw+7rem)] cursor-pointer" alt="" />
-                        <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn">Grape Eau De Parfum</span>
-                        <div className="w-full flex flex-row items-center justify-between gap-[calc(0.4vw+0.6rem)]">
-                            <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn text-gray-500">$20</span>
-                            <i className="bx bx-cart-plus text-[length:var(--icon-size)] hovered cursor-pointer fadeIn" />
-                        </div>
-                    </div>
+                    <ProductCard name={"Dark Eau Perfume"} image={Dark.src} price={"$30"} />
+                    <ProductCard name={"Dark Eau Perfume"} image={Dark.src} price={"$30"} />
+                    <ProductCard name={"Dark Eau Perfume"} image={Dark.src} price={"$30"} />
+                    <ProductCard name={"Dark Eau Perfume"} image={Dark.src} price={"$30"} />
                 </div>
-                <div className="flex flex-row items-center justify-center flex-wrap gap-[calc(0.4vw+0.6rem)] py-[calc(0.4vw+0.6rem)]">
-                    <div className="flex flex-col items-start justify-start gap-[calc(0.4vw+0.6rem)]">
-                        <img src={Sanctum.src} className="h-[calc(13vw+7rem)] w-[calc(13vw+7rem)] cursor-pointer" alt="" />
-                        <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn">Sanctum Eau De Parfum</span>
-                        <div className="w-full flex flex-row items-center justify-between gap-[calc(0.4vw+0.6rem)]">
-                            <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn text-gray-500">$30</span>
-                            <i className="bx bx-cart-plus text-[length:var(--icon-size)] hovered cursor-pointer fadeIn" />
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-start justify-start gap-[calc(0.4vw+0.6rem)]">
-                        <img src={Charm.src} className="h-[calc(13vw+7rem)] w-[calc(13vw+7rem)] cursor-pointer" alt="" />
-                        <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn">Charm Eau De Parfum</span>
-                        <div className="w-full flex flex-row items-center justify-between gap-[calc(0.4vw+0.6rem)]">
-                            <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn text-gray-500">$40</span>
-                            <i className="bx bx-cart-plus text-[length:var(--icon-size)] hovered cursor-pointer fadeIn" />
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-start justify-start gap-[calc(0.4vw+0.6rem)]">
-                        <img src={Stellar.src} className="h-[calc(13vw+7rem)] w-[calc(13vw+7rem)] cursor-pointer" alt="" />
-                        <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn">Stellar Eau De Parfum</span>
-                        <div className="w-full flex flex-row items-center justify-between gap-[calc(0.4vw+0.6rem)]">
-                            <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn text-gray-500">$50</span>
-                            <i className="bx bx-cart-plus text-[length:var(--icon-size)] hovered cursor-pointer fadeIn" />
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-start justify-start gap-[calc(0.4vw+0.6rem)]">
-                        <img src={Obelisk.src} className="h-[calc(13vw+7rem)] w-[calc(13vw+7rem)] cursor-pointer" alt="" />
-                        <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn">Obelisk Eau De Parfum</span>
-                        <div className="w-full flex flex-row items-center justify-between gap-[calc(0.4vw+0.6rem)]">
-                            <span className="text-[length:var(--normal-font-size)] hovered cursor-pointer fadeIn text-gray-500">$50</span>
-                            <i className="bx bx-cart-plus text-[length:var(--icon-size)] hovered cursor-pointer fadeIn" />
-                        </div>
-                    </div>
+                <div className="flex flex-row items-center justify-center flex-wrap gap-[calc(0.4vw+0.6rem)]">
+                    <ProductCard name={"Dark Eau Perfume"} image={Dark.src} price={"$30"} />
+                    <ProductCard name={"Dark Eau Perfume"} image={Dark.src} price={"$30"} />
+                    <ProductCard name={"Dark Eau Perfume"} image={Dark.src} price={"$30"} />
+                    <ProductCard name={"Dark Eau Perfume"} image={Dark.src} price={"$30"} />
                 </div>
 
             </div>
